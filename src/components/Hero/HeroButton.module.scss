@@ -1,0 +1,50 @@
+.hbtn {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--btn-bg, #096efd);
+    border: none;
+    cursor: pointer;
+    padding: 25px 90px;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .text,
+    .clonedText {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        font-size: var(--fs, 1rem);
+        transition: transform var(--transition-duration, 0.3s) var(--transition-ease, ease);
+        line-height: 1;
+        color: var(--btn-text-color, #ffffff);
+        font-weight: 600;
+    }
+
+    .text {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    .clonedText {
+        top: 150%;
+        transform: translateY(-100%);
+        z-index: 1;
+    }
+
+    &:hover {
+        background-color: var(--btn-hover-bg, #096efd);
+        color: var(--btn-hover-text-color, #ffffff);
+
+        .text {
+            transform: translateY(-400%);
+        }
+
+        .clonedText {
+            transform: translateY(-370%);
+        }
+    }
+}

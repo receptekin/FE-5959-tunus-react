@@ -1,0 +1,22 @@
+.startNavbar {
+    background-color: #04409b !important;
+    padding-bottom: 2rem;
+}
+
+.NavbarBrand {
+    font-size: 30px !important;
+    color: azure !important;
+}
+
+.NavbarBrand:hover {
+    color: #b7f205 !important;
+}
+
+.navLink {
+    color: azure !important;
+    font-size: 20px !important;
+}
+
+.navLink:hover {
+    color: #b7f205 !important;
+}
